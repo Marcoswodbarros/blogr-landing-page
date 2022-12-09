@@ -1,0 +1,58 @@
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+main .container__firstbg {
+  align-items: center;
+  background-image: url(../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  width: 85%;
+}
+main .container__firstbg .main__picture--tanya {
+  border-radius: 0.5rem;
+  margin-top: 8%;
+  width: 79%;
+}
+main .container__firstbg .button {
+  background: hsl(240deg, 18%, 77%);
+  border-style: none;
+  padding: 0.5rem 1rem;
+}
+main .container__firstbg .main__button--left {
+  border-radius: 1rem 0 0 1rem;
+}
+main .container__firstbg .main__button--right {
+  border-radius: 0 1rem 1rem 0;
+}
+main .container__secondbg {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../images/pattern-quotes.svg);
+}
+main .container__secondbg .main__apresentation {
+  color: hsl(240deg, 38%, 20%);
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-top: 3rem;
+  text-align: center;
+  width: 85%;
+}
+main .container__secondbg .main__name {
+  color: hsl(240deg, 38%, 20%);
+  font-weight: 700;
+  margin-top: 1rem;
+}
+main .container__secondbg .main__job {
+  color: hsl(240deg, 18%, 77%);
+  margin-top: 0.5rem;
+}
+
+body {
+  font-family: "Inter";
+}/*# sourceMappingURL=style.css.map */
