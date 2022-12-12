@@ -1,3 +1,4 @@
+@charset "UTF-8";
 main .container__tanya {
   align-items: center;
   display: flex;
@@ -5,12 +6,19 @@ main .container__tanya {
 }
 main .container__firstbg {
   align-items: center;
-  background-image: url(../../images/pattern-bg.svg);
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
   width: 85%;
+}
+main .container__firstbg .firstbg {
+  background-image: url("C:/Users/Marcos/OneDrive/Documentos/Programação/Frontend Mentor/8- Blogr landing page/coding-bootcamp-testimonials-slider-master/assets/images/pattern-bg.svg");
+  background-size: contain;
+  width: 85vw;
+  height: 45vh;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
 }
 main .container__firstbg .main__picture--tanya {
   border-radius: 0.5rem;
@@ -38,15 +46,19 @@ main .container__firstbg .main__buttons .tanya__button--right {
 }
 main .container__secondbg {
   align-items: center;
+  background-image: url("C:/Users/Marcos/OneDrive/Documentos/Programação/Frontend Mentor/8- Blogr landing page/coding-bootcamp-testimonials-slider-master/assets/images/pattern-quotes.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 9vh;
   display: flex;
   flex-direction: column;
-  background-image: url(../../images/pattern-quotes.svg);
+  margin-top: 3rem;
 }
 main .container__secondbg .main__apresentation {
   color: hsl(240deg, 38%, 20%);
   font-size: 1.1rem;
   line-height: 1.5rem;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   text-align: center;
   width: 85%;
 }
@@ -59,6 +71,16 @@ main .container__secondbg .main__job {
   color: hsl(240deg, 18%, 77%);
   margin-top: 0.5rem;
 }
+main .thirdbg {
+  background-image: url("C:/Users/Marcos/OneDrive/Documentos/Programação/Frontend Mentor/8- Blogr landing page/coding-bootcamp-testimonials-slider-master/assets/images/pattern-curve.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85vw;
+  height: 12vh;
+}
 
 main .container__john {
   align-items: center;
@@ -66,25 +88,10 @@ main .container__john {
   flex-direction: column;
   display: none;
 }
-main .container__john .container__firstbg {
-  align-items: center;
-  background-image: url(../images/pattern-bg.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  margin-top: 1.5rem;
-  width: 85%;
-}
 main .container__john .container__firstbg .main__picture--john {
   border-radius: 0.5rem;
   margin-top: 8%;
   width: 79%;
-}
-main .container__john .container__firstbg .button {
-  background: hsl(240deg, 18%, 77%);
-  border-style: none;
-  padding: 0.5rem 1rem;
 }
 main .container__john .container__firstbg .john__button--left {
   border-radius: 1rem 0 0 1rem;
@@ -96,27 +103,13 @@ main .container__john .container__firstbg .john__button--right {
   position: relative;
   right: 0.2rem;
 }
-main .container__john .container__secondbg {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
 main .container__john .container__secondbg .main__apresentation--john {
   color: hsl(240deg, 38%, 20%);
   font-size: 1.12rem;
   line-height: 1.5rem;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   text-align: center;
   width: 85%;
-}
-main .container__john .container__secondbg .main__name {
-  color: hsl(240deg, 38%, 20%);
-  font-weight: 700;
-  margin-top: 1rem;
-}
-main .container__john .container__secondbg .main__job {
-  color: hsl(240deg, 18%, 77%);
-  margin-top: 0.5rem;
 }
 
 body {

@@ -9,12 +9,20 @@ main{
     
     .container__firstbg{
         align-items: center;
-        background-image: url(../../images/pattern-bg.svg);
-        background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         margin-top: 1.5rem;
         width: 85%;
+
+        .firstbg{
+            background-image: url("C:/Users/Marcos/OneDrive/Documentos/Programação/Frontend Mentor/8- Blogr landing page/coding-bootcamp-testimonials-slider-master/assets/images/pattern-bg.svg");
+            background-size: contain;
+            width: 85vw;
+            height: 45vh;
+            position: absolute;
+            z-index: -1;
+            background-repeat: no-repeat;
+        }
 
         .main__picture--tanya{
             border-radius: .5rem;
@@ -49,15 +57,19 @@ main{
 
     .container__secondbg{
         align-items: center;
+        background-image: url("C:/Users/Marcos/OneDrive/Documentos/Programação/Frontend Mentor/8- Blogr landing page/coding-bootcamp-testimonials-slider-master/assets/images/pattern-quotes.svg");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 9vh;
         display: flex;
         flex-direction: column;
-        background-image: url(../../images/pattern-quotes.svg);
+        margin-top: 3rem;
 
         .main__apresentation{
             color: $color-dark-blue;
             font-size: 1.1rem;
             line-height: 1.5rem;
-            padding-top: 3rem;
+            padding-top: 1.5rem;
             text-align: center;
             width: 85%;
         }
@@ -73,4 +85,15 @@ main{
             margin-top: .5rem;
         }
     }    
+
+    .thirdbg{
+        background-image: url("C:/Users/Marcos/OneDrive/Documentos/Programação/Frontend Mentor/8- Blogr landing page/coding-bootcamp-testimonials-slider-master/assets/images/pattern-curve.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 85vw;
+        height: 12vh;
+    }
 }
