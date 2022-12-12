@@ -1,5 +1,5 @@
 var leftButton = document.querySelector('.john__button--left');
-var rightButton = document.querySelector('.main__button--right');
+var rightButton = document.querySelector('.tanya__button--right');
 
 var tanyaContainer = document.querySelector(".container__tanya");
 var johnContainer = document.querySelector('.container__john');
