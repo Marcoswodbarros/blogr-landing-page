@@ -1,18 +1,17 @@
-@charset "UTF-8";
 main .container__tanya {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-main .container__firstbg {
+main .container__tanya .container__firstbg {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
   width: 85%;
 }
-main .container__firstbg .firstbg {
-  background-image: url("C:/Users/Marcos/OneDrive/Documentos/Programação/Frontend Mentor/8- Blogr landing page/coding-bootcamp-testimonials-slider-master/assets/images/pattern-bg.svg");
+main .container__tanya .container__firstbg .firstbg {
+  background-image: url("../../assets/images/pattern-bg.svg");
   background-size: contain;
   width: 85vw;
   height: 45vh;
@@ -20,33 +19,33 @@ main .container__firstbg .firstbg {
   z-index: -1;
   background-repeat: no-repeat;
 }
-main .container__firstbg .main__picture--tanya {
+main .container__tanya .container__firstbg .main__picture--tanya {
   border-radius: 0.5rem;
   margin-top: 8%;
   width: 79%;
 }
-main .container__firstbg .main__buttons {
+main .container__tanya .container__firstbg .main__buttons {
   position: absolute;
   bottom: 52%;
 }
-main .container__firstbg .main__buttons .button {
+main .container__tanya .container__firstbg .main__buttons .button {
   background: hsl(240deg, 18%, 77%);
   border-style: none;
   padding: 0.5rem 1rem;
 }
-main .container__firstbg .main__buttons .tanya__button--left {
+main .container__tanya .container__firstbg .main__buttons .tanya__button--left {
   border-radius: 1rem 0 0 1rem;
   position: relative;
   left: 0.2rem;
 }
-main .container__firstbg .main__buttons .tanya__button--right {
+main .container__tanya .container__firstbg .main__buttons .tanya__button--right {
   border-radius: 0 1rem 1rem 0;
   position: relative;
   right: 0.2rem;
 }
 main .container__secondbg {
   align-items: center;
-  background-image: url("C:/Users/Marcos/OneDrive/Documentos/Programação/Frontend Mentor/8- Blogr landing page/coding-bootcamp-testimonials-slider-master/assets/images/pattern-quotes.svg");
+  background-image: url("../../assets/images/pattern-quotes.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 9vh;
@@ -72,7 +71,7 @@ main .container__secondbg .main__job {
   margin-top: 0.5rem;
 }
 main .thirdbg {
-  background-image: url("C:/Users/Marcos/OneDrive/Documentos/Programação/Frontend Mentor/8- Blogr landing page/coding-bootcamp-testimonials-slider-master/assets/images/pattern-curve.svg");
+  background-image: url("../../assets/images/pattern-curve.svg");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -113,5 +112,6 @@ main .container__john .container__secondbg .main__apresentation--john {
 }
 
 body {
+  box-sizing: border-box;
   font-family: "Inter";
 }/*# sourceMappingURL=style.css.map */
