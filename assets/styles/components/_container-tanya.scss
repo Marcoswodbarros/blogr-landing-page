@@ -7,20 +7,10 @@ main{
         flex-direction: column;
 
         .container__firstbg{
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            margin-top: 1.5rem;
-            width: 85%;
+            @include contFirstbg;
     
             .firstbg{
-                background-image: url("../../assets/images/pattern-bg.svg");
-                background-size: contain;
-                width: 85vw;
-                height: 45vh;
-                position: absolute;
-                z-index: -1;
-                background-repeat: no-repeat;
+                @include firstbg;
             }
     
             .main__picture--tanya{
@@ -32,6 +22,7 @@ main{
             .main__buttons{
                 position: absolute;
                 bottom: 52%;
+                
                 .button{
                     background: $color-grayish-blue;
                     border-style: none;
@@ -40,15 +31,11 @@ main{
                 }
             
                 .tanya__button--left{
-                    border-radius: 1rem 0 0 1rem;
-                    position: relative;
-                    left: .2rem;
+                    @include buttonLeft;
                 }
             
                 .tanya__button--right{
-                    border-radius: 0 1rem 1rem 0;
-                    position: relative;
-                    right: .2rem;
+                    @include buttonRight;
                 }
             }
         } 

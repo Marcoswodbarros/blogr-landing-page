@@ -12,12 +12,12 @@ main .container__tanya .container__firstbg {
 }
 main .container__tanya .container__firstbg .firstbg {
   background-image: url("../../assets/images/pattern-bg.svg");
+  background-repeat: no-repeat;
   background-size: contain;
-  width: 85vw;
   height: 45vh;
   position: absolute;
+  width: 85vw;
   z-index: -1;
-  background-repeat: no-repeat;
 }
 main .container__tanya .container__firstbg .main__picture--tanya {
   border-radius: 0.5rem;
@@ -87,17 +87,42 @@ main .container__john {
   flex-direction: column;
   display: none;
 }
+main .container__john .container__firstbg {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  width: 85%;
+}
+main .container__john .container__firstbg .firstbg {
+  background-image: url("../../assets/images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 45vh;
+  position: absolute;
+  width: 85vw;
+  z-index: -1;
+}
 main .container__john .container__firstbg .main__picture--john {
   border-radius: 0.5rem;
   margin-top: 8%;
   width: 79%;
 }
-main .container__john .container__firstbg .john__button--left {
+main .container__john .container__firstbg .main__buttons {
+  position: absolute;
+  bottom: 52%;
+}
+main .container__john .container__firstbg .main__buttons .button {
+  background: hsl(240deg, 18%, 77%);
+  border-style: none;
+  padding: 0.5rem 1rem;
+}
+main .container__john .container__firstbg .main__buttons .john__button--left {
   border-radius: 1rem 0 0 1rem;
   position: relative;
   left: 0.2rem;
 }
-main .container__john .container__firstbg .john__button--right {
+main .container__john .container__firstbg .main__buttons .john__button--right {
   border-radius: 0 1rem 1rem 0;
   position: relative;
   right: 0.2rem;

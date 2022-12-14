@@ -9,24 +9,37 @@ main{
         display: none;
         
         .container__firstbg{
+            @include contFirstbg;
+
+            .firstbg{
+                @include firstbg;
+            }
+
             .main__picture--john{
                 border-radius: .5rem;
                 margin-top: 8%;
                 width: 79%;
             }
+
+            .main__buttons{
+                position: absolute;
+                bottom: 52%;
+                
+                .button{
+                    background: $color-grayish-blue;
+                    border-style: none;
+                    padding: .5rem 1rem;
         
-            .john__button--left{
-                border-radius: 1rem 0 0 1rem;
-                position: relative;
-                left: .2rem;
-            }
+                }
         
-            .john__button--right{
-                border-radius: 0 1rem 1rem 0;
-                position: relative;
-                right: .2rem;
-            }
-        
+                .john__button--left{
+                    @include buttonLeft;
+                }
+            
+                .john__button--right{
+                    @include buttonRight;
+                }
+            }    
         }
 
         .container__secondbg{
