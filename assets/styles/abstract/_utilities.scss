@@ -27,3 +27,20 @@
     position: relative;
     right: .2rem;
 }
+
+
+// Desktop version
+
+@mixin firstbg-desktop{
+    left: 45%;
+    height: 100vh;
+    top: 10%;
+    width: 50vw;
+}
+
+@mixin profilepic-desktop{
+    height: 64vh;
+    margin-right: 35%;
+    margin-top: 20%;
+    width: auto;
+}

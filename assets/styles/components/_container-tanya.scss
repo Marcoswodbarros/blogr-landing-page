@@ -1,22 +1,32 @@
 @import '../abstract/variables';
 
 main{
-    .container__tanya{
+    .section__container--tanya{
         align-items: center;
         display: flex;
         flex-direction: column;
+        
+        @media screen and (min-width: $desktop){
+            flex-direction: row-reverse;
+        }
 
         .container__firstbg{
             @include contFirstbg;
     
             .firstbg{
                 @include firstbg;
+                @media screen and (min-width: $desktop){
+                    @include firstbg-desktop;
+                }
             }
     
             .main__picture--tanya{
                 border-radius: .5rem;
                 margin-top: 8%;
                 width: 79%;
+                @media screen and (min-width: $desktop){
+                    @include profilepic-desktop;
+                }
             }
             
             .main__buttons{

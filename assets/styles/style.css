@@ -1,16 +1,21 @@
-main .container__tanya {
+main .section__container--tanya {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-main .container__tanya .container__firstbg {
+@media screen and (min-width: 1440px) {
+  main .section__container--tanya {
+    flex-direction: row-reverse;
+  }
+}
+main .section__container--tanya .container__firstbg {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
   width: 85%;
 }
-main .container__tanya .container__firstbg .firstbg {
+main .section__container--tanya .container__firstbg .firstbg {
   background-image: url("../../assets/images/pattern-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -19,26 +24,42 @@ main .container__tanya .container__firstbg .firstbg {
   width: 85vw;
   z-index: -1;
 }
-main .container__tanya .container__firstbg .main__picture--tanya {
+@media screen and (min-width: 1440px) {
+  main .section__container--tanya .container__firstbg .firstbg {
+    left: 45%;
+    height: 100vh;
+    top: 10%;
+    width: 50vw;
+  }
+}
+main .section__container--tanya .container__firstbg .main__picture--tanya {
   border-radius: 0.5rem;
   margin-top: 8%;
   width: 79%;
 }
-main .container__tanya .container__firstbg .main__buttons {
+@media screen and (min-width: 1440px) {
+  main .section__container--tanya .container__firstbg .main__picture--tanya {
+    height: 64vh;
+    margin-right: 35%;
+    margin-top: 20%;
+    width: auto;
+  }
+}
+main .section__container--tanya .container__firstbg .main__buttons {
   position: absolute;
   bottom: 52%;
 }
-main .container__tanya .container__firstbg .main__buttons .button {
+main .section__container--tanya .container__firstbg .main__buttons .button {
   background: hsl(240deg, 18%, 77%);
   border-style: none;
   padding: 0.5rem 1rem;
 }
-main .container__tanya .container__firstbg .main__buttons .tanya__button--left {
+main .section__container--tanya .container__firstbg .main__buttons .tanya__button--left {
   border-radius: 1rem 0 0 1rem;
   position: relative;
   left: 0.2rem;
 }
-main .container__tanya .container__firstbg .main__buttons .tanya__button--right {
+main .section__container--tanya .container__firstbg .main__buttons .tanya__button--right {
   border-radius: 0 1rem 1rem 0;
   position: relative;
   right: 0.2rem;
@@ -81,20 +102,25 @@ main .thirdbg {
   height: 12vh;
 }
 
-main .container__john {
+main .section__container--john {
   align-items: center;
   display: flex;
   flex-direction: column;
   display: none;
 }
-main .container__john .container__firstbg {
+@media screen and (min-width: 1440px) {
+  main .section__container--john {
+    flex-direction: row-reverse;
+  }
+}
+main .section__container--john .container__firstbg {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
   width: 85%;
 }
-main .container__john .container__firstbg .firstbg {
+main .section__container--john .container__firstbg .firstbg {
   background-image: url("../../assets/images/pattern-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -103,31 +129,47 @@ main .container__john .container__firstbg .firstbg {
   width: 85vw;
   z-index: -1;
 }
-main .container__john .container__firstbg .main__picture--john {
+@media screen and (min-width: 1440px) {
+  main .section__container--john .container__firstbg .firstbg {
+    left: 45%;
+    height: 100vh;
+    top: 10%;
+    width: 50vw;
+  }
+}
+main .section__container--john .container__firstbg .main__picture--john {
   border-radius: 0.5rem;
   margin-top: 8%;
   width: 79%;
 }
-main .container__john .container__firstbg .main__buttons {
+@media screen and (min-width: 1440px) {
+  main .section__container--john .container__firstbg .main__picture--john {
+    height: 64vh;
+    margin-right: 35%;
+    margin-top: 20%;
+    width: auto;
+  }
+}
+main .section__container--john .container__firstbg .main__buttons {
   position: absolute;
   bottom: 52%;
 }
-main .container__john .container__firstbg .main__buttons .button {
+main .section__container--john .container__firstbg .main__buttons .button {
   background: hsl(240deg, 18%, 77%);
   border-style: none;
   padding: 0.5rem 1rem;
 }
-main .container__john .container__firstbg .main__buttons .john__button--left {
+main .section__container--john .container__firstbg .main__buttons .john__button--left {
   border-radius: 1rem 0 0 1rem;
   position: relative;
   left: 0.2rem;
 }
-main .container__john .container__firstbg .main__buttons .john__button--right {
+main .section__container--john .container__firstbg .main__buttons .john__button--right {
   border-radius: 0 1rem 1rem 0;
   position: relative;
   right: 0.2rem;
 }
-main .container__john .container__secondbg .main__apresentation--john {
+main .section__container--john .container__secondbg .main__apresentation--john {
   color: hsl(240deg, 38%, 20%);
   font-size: 1.12rem;
   line-height: 1.5rem;
