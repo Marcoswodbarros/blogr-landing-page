@@ -27,13 +27,14 @@ main .section__container--tanya .container__firstbg .firstbg {
 @media screen and (min-width: 1440px) {
   main .section__container--tanya .container__firstbg .firstbg {
     left: 45%;
-    height: 100vh;
+    height: 90vh;
     top: 10%;
     width: 50vw;
   }
 }
 main .section__container--tanya .container__firstbg .main__picture--tanya {
   border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 35px 34px -20px;
   margin-top: 8%;
   width: 79%;
 }
@@ -43,14 +44,22 @@ main .section__container--tanya .container__firstbg .main__picture--tanya {
     margin-right: 35%;
     margin-top: 20%;
     width: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 40px 50px -20px;
   }
 }
 main .section__container--tanya .container__firstbg .main__buttons {
   position: absolute;
   bottom: 52%;
 }
+@media screen and (min-width: 1440px) {
+  main .section__container--tanya .container__firstbg .main__buttons {
+    top: 78.5%;
+    right: 38%;
+    z-index: 10;
+  }
+}
 main .section__container--tanya .container__firstbg .main__buttons .button {
-  background: hsl(240deg, 18%, 77%);
+  background: #FFF;
   border-style: none;
   padding: 0.5rem 1rem;
 }
@@ -59,10 +68,22 @@ main .section__container--tanya .container__firstbg .main__buttons .tanya__butto
   position: relative;
   left: 0.2rem;
 }
+@media screen and (min-width: 1440px) {
+  main .section__container--tanya .container__firstbg .main__buttons .tanya__button--left {
+    padding: 1.2rem 1.5rem 1.2rem 1.2rem;
+    border-radius: 2rem 0 0 2rem;
+  }
+}
 main .section__container--tanya .container__firstbg .main__buttons .tanya__button--right {
   border-radius: 0 1rem 1rem 0;
   position: relative;
   right: 0.2rem;
+}
+@media screen and (min-width: 1440px) {
+  main .section__container--tanya .container__firstbg .main__buttons .tanya__button--right {
+    padding: 1.2rem 1.2rem 1.2rem 1.5rem;
+    border-radius: 0 2rem 2rem 0;
+  }
 }
 main .container__secondbg {
   align-items: center;
@@ -74,6 +95,16 @@ main .container__secondbg {
   flex-direction: column;
   margin-top: 3rem;
 }
+@media screen and (min-width: 1440px) {
+  main .container__secondbg {
+    position: relative;
+    left: 5%;
+    width: 100%;
+    margin-top: 13rem;
+    background-position: top left 25%;
+    background-size: 13vh;
+  }
+}
 main .container__secondbg .main__apresentation {
   color: hsl(240deg, 38%, 20%);
   font-size: 1.1rem;
@@ -82,14 +113,52 @@ main .container__secondbg .main__apresentation {
   text-align: center;
   width: 85%;
 }
-main .container__secondbg .main__name {
+@media screen and (min-width: 1440px) {
+  main .container__secondbg .main__apresentation {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main .container__secondbg .main__apresentation {
+    color: hsl(240deg, 38%, 20%);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main .container__secondbg .container__text--desktop {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    position: relative;
+    right: 20%;
+  }
+}
+main .container__secondbg .container__text--desktop .main__name {
   color: hsl(240deg, 38%, 20%);
   font-weight: 700;
   margin-top: 1rem;
+  text-align: center;
 }
-main .container__secondbg .main__job {
+@media screen and (min-width: 1440px) {
+  main .container__secondbg .container__text--desktop .main__name {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
+main .container__secondbg .container__text--desktop .main__job {
   color: hsl(240deg, 18%, 77%);
   margin-top: 0.5rem;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  main .container__secondbg .container__text--desktop .main__job {
+    font-size: 1.5rem;
+    margin: 0;
+  }
 }
 main .thirdbg {
   background-image: url("../../assets/images/pattern-curve.svg");
@@ -100,6 +169,11 @@ main .thirdbg {
   left: 0;
   width: 85vw;
   height: 12vh;
+}
+@media screen and (min-width: 1440px) {
+  main .thirdbg {
+    height: 20vh;
+  }
 }
 
 main .section__container--john {
@@ -132,13 +206,14 @@ main .section__container--john .container__firstbg .firstbg {
 @media screen and (min-width: 1440px) {
   main .section__container--john .container__firstbg .firstbg {
     left: 45%;
-    height: 100vh;
+    height: 90vh;
     top: 10%;
     width: 50vw;
   }
 }
 main .section__container--john .container__firstbg .main__picture--john {
   border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 35px 34px -20px;
   margin-top: 8%;
   width: 79%;
 }
@@ -148,14 +223,22 @@ main .section__container--john .container__firstbg .main__picture--john {
     margin-right: 35%;
     margin-top: 20%;
     width: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 40px 50px -20px;
   }
 }
 main .section__container--john .container__firstbg .main__buttons {
   position: absolute;
   bottom: 52%;
 }
+@media screen and (min-width: 1440px) {
+  main .section__container--john .container__firstbg .main__buttons {
+    top: 78.5%;
+    right: 38%;
+    z-index: 10;
+  }
+}
 main .section__container--john .container__firstbg .main__buttons .button {
-  background: hsl(240deg, 18%, 77%);
+  background: #FFF;
   border-style: none;
   padding: 0.5rem 1rem;
 }
@@ -164,10 +247,22 @@ main .section__container--john .container__firstbg .main__buttons .john__button-
   position: relative;
   left: 0.2rem;
 }
+@media screen and (min-width: 1440px) {
+  main .section__container--john .container__firstbg .main__buttons .john__button--left {
+    padding: 1.2rem 1.5rem 1.2rem 1.2rem;
+    border-radius: 2rem 0 0 2rem;
+  }
+}
 main .section__container--john .container__firstbg .main__buttons .john__button--right {
   border-radius: 0 1rem 1rem 0;
   position: relative;
   right: 0.2rem;
+}
+@media screen and (min-width: 1440px) {
+  main .section__container--john .container__firstbg .main__buttons .john__button--right {
+    padding: 1.2rem 1.2rem 1.2rem 1.5rem;
+    border-radius: 0 2rem 2rem 0;
+  }
 }
 main .section__container--john .container__secondbg .main__apresentation--john {
   color: hsl(240deg, 38%, 20%);
@@ -176,6 +271,22 @@ main .section__container--john .container__secondbg .main__apresentation--john {
   padding-top: 1.5rem;
   text-align: center;
   width: 85%;
+}
+@media screen and (min-width: 1440px) {
+  main .section__container--john .container__secondbg .main__apresentation--john {
+    color: hsl(240deg, 38%, 20%);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    text-align: start;
+    width: 81.5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main .section__container--john .container__secondbg .container__text--desktop,
+main .section__container--john .container__secondbg .john__text--desktop {
+    right: 10%;
+  }
 }
 
 body {

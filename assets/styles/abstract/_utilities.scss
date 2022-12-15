@@ -31,16 +31,26 @@
 
 // Desktop version
 
-@mixin firstbg-desktop{
+@mixin firstbg-desktop {
     left: 45%;
-    height: 100vh;
+    height: 90vh;
     top: 10%;
     width: 50vw;
 }
 
-@mixin profilepic-desktop{
+@mixin profilepic-desktop {
     height: 64vh;
     margin-right: 35%;
     margin-top: 20%;
     width: auto;
+}
+
+@mixin buttonLeft-desktop {
+    padding: 1.2rem 1.5rem 1.2rem 1.2rem;
+    border-radius: 2rem 0 0 2rem;
+}
+
+@mixin buttonRight-desktop {
+    padding: 1.2rem 1.2rem 1.2rem 1.5rem;
+    border-radius: 0 2rem 2rem 0;
 }

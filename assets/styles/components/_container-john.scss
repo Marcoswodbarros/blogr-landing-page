@@ -24,30 +24,43 @@ main{
 
             .main__picture--john{
                 border-radius: .5rem;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 35px 34px -20px;
                 margin-top: 8%;
                 width: 79%;
                 @media screen and (min-width: $desktop){
                     @include profilepic-desktop;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 40px 50px -20px;
                 }
             }
 
             .main__buttons{
                 position: absolute;
                 bottom: 52%;
+
+                @media screen and (min-width: $desktop){
+                    top: 78.5%;
+                    right: 38%;
+                    z-index: 10;
+                }
                 
                 .button{
-                    background: $color-grayish-blue;
+                    background: $color-white;
                     border-style: none;
                     padding: .5rem 1rem;
-        
                 }
         
                 .john__button--left{
                     @include buttonLeft;
+                    @media screen and (min-width: $desktop){
+                        @include buttonLeft-desktop;
+                    }
                 }
             
                 .john__button--right{
                     @include buttonRight;
+                    @media screen and (min-width: $desktop){
+                        @include buttonRight-desktop;
+                    }
                 }
             }    
         }
@@ -60,7 +73,23 @@ main{
                 padding-top: 1.5rem;
                 text-align: center;
                 width: 85%;
+
+                @media screen and (min-width: $desktop){
+                    color: $color-dark-blue;
+                    font-size: 2rem;
+                    font-weight: 300;
+                    line-height: 2.5rem;
+                    text-align: start;
+                    width: 81.5%;
+                }
             } 
+
+            .container__text--desktop, 
+            .john__text--desktop{
+                @media screen and (min-width: $desktop){
+                    right: 10%;
+                }
+            }    
         }
     }
 }
