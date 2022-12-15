@@ -44,13 +44,21 @@ main{
                 .button{
                     background: $color-white;
                     border-style: none;
-                    padding: .5rem 1rem;
+                    padding: .7rem 1rem;
                 }
             
                 .tanya__button--left{
                     @include buttonLeft;
                     @media screen and (min-width: $desktop){
                         @include buttonLeft-desktop;
+                    }
+
+                    .button__left--icon{
+                        height: .9rem;
+
+                        @media screen and (min-width: $desktop){
+                            height: 1.1rem;
+                        }
                     }
                 }
             
@@ -59,6 +67,14 @@ main{
                     @media screen and (min-width: $desktop){
                         @include buttonRight-desktop;
                     }
+
+                    .button__right--icon{
+                        height: .9rem;
+
+                        @media screen and (min-width: $desktop){
+                            height: 1.1rem;
+                        }
+                    }
                 }
             }
         } 
@@ -66,10 +82,6 @@ main{
     
     .container__secondbg{
         align-items: center;
-        background-image: url("../../assets/images/pattern-quotes.svg");
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: 9vh;
         display: flex;
         flex-direction: column;
         margin-top: 3rem;
@@ -81,6 +93,23 @@ main{
             margin-top: 13rem;
             background-position: top left 25%;
             background-size: 13vh;
+        }
+
+        .secondbg{
+            background-image: url("../../assets/images/pattern-quotes.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top center;
+            bottom: 40%;
+            height: 7vh;
+            position: absolute;
+            width: 85vw;
+
+            @media screen and (min-width: $desktop){
+                background-position: top left 35%;
+                bottom: 80%;
+                height: 10vh;
+            }
         }
 
         .main__apresentation{

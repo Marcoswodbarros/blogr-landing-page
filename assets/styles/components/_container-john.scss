@@ -46,20 +46,36 @@ main{
                 .button{
                     background: $color-white;
                     border-style: none;
-                    padding: .5rem 1rem;
+                    padding: .7rem 1rem;
                 }
-        
+                
                 .john__button--left{
                     @include buttonLeft;
                     @media screen and (min-width: $desktop){
                         @include buttonLeft-desktop;
                     }
+
+                    .button__left--icon{
+                        height: .9rem;
+
+                        @media screen and (min-width: $desktop){
+                            height: 1.1rem;
+                        }
+                    }
                 }
-            
+
                 .john__button--right{
                     @include buttonRight;
                     @media screen and (min-width: $desktop){
                         @include buttonRight-desktop;
+                    }
+
+                    .button__right--icon{
+                        height: .9rem;
+                        
+                        @media screen and (min-width: $desktop){
+                            height: 1.1rem;
+                        }
                     }
                 }
             }    

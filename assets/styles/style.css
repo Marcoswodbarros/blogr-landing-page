@@ -61,10 +61,10 @@ main .section__container--tanya .container__firstbg .main__buttons {
 main .section__container--tanya .container__firstbg .main__buttons .button {
   background: #FFF;
   border-style: none;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
 }
 main .section__container--tanya .container__firstbg .main__buttons .tanya__button--left {
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 1.3rem 0 0 1.3rem;
   position: relative;
   left: 0.2rem;
 }
@@ -74,8 +74,16 @@ main .section__container--tanya .container__firstbg .main__buttons .tanya__butto
     border-radius: 2rem 0 0 2rem;
   }
 }
+main .section__container--tanya .container__firstbg .main__buttons .tanya__button--left .button__left--icon {
+  height: 0.9rem;
+}
+@media screen and (min-width: 1440px) {
+  main .section__container--tanya .container__firstbg .main__buttons .tanya__button--left .button__left--icon {
+    height: 1.1rem;
+  }
+}
 main .section__container--tanya .container__firstbg .main__buttons .tanya__button--right {
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 0 1.3rem 1.3rem 0;
   position: relative;
   right: 0.2rem;
 }
@@ -85,12 +93,16 @@ main .section__container--tanya .container__firstbg .main__buttons .tanya__butto
     border-radius: 0 2rem 2rem 0;
   }
 }
+main .section__container--tanya .container__firstbg .main__buttons .tanya__button--right .button__right--icon {
+  height: 0.9rem;
+}
+@media screen and (min-width: 1440px) {
+  main .section__container--tanya .container__firstbg .main__buttons .tanya__button--right .button__right--icon {
+    height: 1.1rem;
+  }
+}
 main .container__secondbg {
   align-items: center;
-  background-image: url("../../assets/images/pattern-quotes.svg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 9vh;
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
@@ -103,6 +115,23 @@ main .container__secondbg {
     margin-top: 13rem;
     background-position: top left 25%;
     background-size: 13vh;
+  }
+}
+main .container__secondbg .secondbg {
+  background-image: url("../../assets/images/pattern-quotes.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  bottom: 40%;
+  height: 7vh;
+  position: absolute;
+  width: 85vw;
+}
+@media screen and (min-width: 1440px) {
+  main .container__secondbg .secondbg {
+    background-position: top left 35%;
+    bottom: 80%;
+    height: 10vh;
   }
 }
 main .container__secondbg .main__apresentation {
@@ -240,10 +269,10 @@ main .section__container--john .container__firstbg .main__buttons {
 main .section__container--john .container__firstbg .main__buttons .button {
   background: #FFF;
   border-style: none;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
 }
 main .section__container--john .container__firstbg .main__buttons .john__button--left {
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 1.3rem 0 0 1.3rem;
   position: relative;
   left: 0.2rem;
 }
@@ -253,8 +282,16 @@ main .section__container--john .container__firstbg .main__buttons .john__button-
     border-radius: 2rem 0 0 2rem;
   }
 }
+main .section__container--john .container__firstbg .main__buttons .john__button--left .button__left--icon {
+  height: 0.9rem;
+}
+@media screen and (min-width: 1440px) {
+  main .section__container--john .container__firstbg .main__buttons .john__button--left .button__left--icon {
+    height: 1.1rem;
+  }
+}
 main .section__container--john .container__firstbg .main__buttons .john__button--right {
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 0 1.3rem 1.3rem 0;
   position: relative;
   right: 0.2rem;
 }
@@ -262,6 +299,14 @@ main .section__container--john .container__firstbg .main__buttons .john__button-
   main .section__container--john .container__firstbg .main__buttons .john__button--right {
     padding: 1.2rem 1.2rem 1.2rem 1.5rem;
     border-radius: 0 2rem 2rem 0;
+  }
+}
+main .section__container--john .container__firstbg .main__buttons .john__button--right .button__right--icon {
+  height: 0.9rem;
+}
+@media screen and (min-width: 1440px) {
+  main .section__container--john .container__firstbg .main__buttons .john__button--right .button__right--icon {
+    height: 1.1rem;
   }
 }
 main .section__container--john .container__secondbg .main__apresentation--john {
